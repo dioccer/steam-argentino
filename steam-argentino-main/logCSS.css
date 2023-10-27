@@ -10,6 +10,9 @@ body{
      40%, hsla(270, 57%, 11%, 0.98),
      60%, hsl(275, 55%, 11%, 0.98),
      80%, hsl(285, 55%, 11%, 0.98));
+     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1{
@@ -73,8 +76,8 @@ section{
 
 .input-contenedor{
     position: relative;
-    margin: 30px 0;
-    width: 300px;
+    margin: 60px 0;
+    width: 250px;
     border: 2px solid #fff;
     border-radius: 15px;
     background-color: rgba(40, 40, 40, 1);
@@ -90,12 +93,21 @@ section{
     pointer-events: none;
     transition: .6s;
     font-weight: bold;
-    
+}
+
+input:focus{
+    box-shadow:0 5px 2px #fff, 0 -5px 2px#fff, -5px 0 2px #fff, 5px 0 2px #fff;
 }
 
 input:focus ~ label, input:valid ~ label{
-    top: -17px;
+    top: -12px;
     color: rgb(188, 88, 197);
+    border: 2px white solid;
+    box-shadow: 0 -2px 2px#fff, -2px 0 2px #fff, 2px 0 2px #fff;
+    background-color: rgba(40, 40, 40, 1);
+    padding: 5px;
+    border-radius: 15px;
+
 }
 
 .input-contenedor input{
@@ -105,7 +117,7 @@ input:focus ~ label, input:valid ~ label{
     border: none;
     outline: none;
     font-size: 1rem;
-    padding: - 35px o 5px;
+    padding: 0 5px;
     color: #fff;
     border-radius: 10px;
 }
@@ -113,7 +125,7 @@ input:focus ~ label, input:valid ~ label{
 /*-----OLVIDE MI CONTRASEÑA-----*/
 
 .olvidar{
-    margin: -15px 0 15px;
+    margin: 0px 0 0px;
     font-size: .9em;
     display: flex;
     justify-content: center;

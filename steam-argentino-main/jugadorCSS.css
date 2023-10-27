@@ -10,6 +10,9 @@ body{
      40%, hsla(270, 57%, 11%, 0.98),
      60%, hsl(275, 55%, 11%, 0.98),
      80%, hsl(285, 55%, 11%, 0.98));
+     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*---TITULO---*/
