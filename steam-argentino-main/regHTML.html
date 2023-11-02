@@ -10,13 +10,42 @@
     <section>
         <div class="contenedor">
             <h1>Tucson Games</h1>
-            <form action="">
-                <div>
-                    <input type="text">
-                    <label for="">Nombre de Usuario</label>
+            <div class="formulaio">
+                <form action="" method="post">
+                    <h2>Registre su Nuevo Usuario</h2>
+                    <div class="input-contenedor email" >
+                       <input type="email" name="email" required autofocus>
+                       <label>Email</label>
+                    </div>
+
+                    <div class="input-contenedor usuario" >
+                        <input type="text" name="user" required autofocus>
+                        <label>Usuario</label>
+                     </div>
+
+                    <div class="input-contenedor contraseña">
+                       <input type="password" name="pass" required>
+                       <label>Contraseña</label>
+                    </div>
+
+                    
+                    <div class="iconos">
+                        <a href=""><img src="imagenes/facebook-logo.png" class="redes"></a>
+                        <a href=""><img src="imagenes/instagram-logo.png" class="redes"></a>
+                        <a href=""><img src="imagenes/twitter-logo.png" class="redes"></a>
+                    </div>
+
+                </form>
+
+                <div class="cajon">
+                    <a href="jugadorHTML.html">
+                        <input type="submit" value="Acceder">
+                    </a>
+                    <div class="ingresar">
+                        <p>¿Ya tienes una cuenta?<a href="logHTML.html">Ingresa con ella</a></p>
+                    </div>
                 </div>
-            </form>
-            
+            </div>
         </div>
     </section>
 </body>
