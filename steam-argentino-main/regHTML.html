@@ -8,44 +8,30 @@
 </head>
 <body>
     <section>
-        <div class="contenedor">
-            <h1>Tucson Games</h1>
-            <div class="formulaio">
-                <form action="" method="post">
-                    <h2>Registre su Nuevo Usuario</h2>
-                    <div class="input-contenedor email" >
-                       <input type="email" name="email" required autofocus>
-                       <label>Email</label>
-                    </div>
-
-                    <div class="input-contenedor usuario" >
-                        <input type="text" name="user" required autofocus>
-                        <label>Usuario</label>
-                     </div>
-
-                    <div class="input-contenedor contraseña">
-                       <input type="password" name="pass" required>
-                       <label>Contraseña</label>
-                    </div>
-
-                    
-                    <div class="iconos">
-                        <a href=""><img src="imagenes/facebook-logo.png" class="redes"></a>
-                        <a href=""><img src="imagenes/instagram-logo.png" class="redes"></a>
-                        <a href=""><img src="imagenes/twitter-logo.png" class="redes"></a>
-                    </div>
-
-                </form>
-
-                <div class="cajon">
-                    <a href="jugadorHTML.html">
-                        <input type="submit" value="Acceder">
-                    </a>
-                    <div class="ingresar">
-                        <p>¿Ya tienes una cuenta?<a href="logHTML.html">Ingresa con ella</a></p>
-                    </div>
+        <div class="container">
+            <a href="inicioHTML.html">Volver a Inicio</a>
+            <h1>Rucson Games</h1>
+            <form action="" class="containerForm">
+                <div class="formNickname">
+                    <label for="">Apodo de Jugador</label>
+                    <input type="text" placeholder="Pepitoxd" required="true">
                 </div>
-            </div>
+                <div class="formName">
+                    <label for="">Nombre de Jugador</label>
+                    <input type="text" placeholder="Jugador 1" required="true">
+                </div>
+                <div class="formEmail">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="example@text.com" required="true">
+                </div>
+                <div class="formPassword">
+                    <label for="">Contraseña</label>
+                    <input type="password" placeholder="**********" required="true">
+                </div>
+                <div class="formButton">
+                    <input type="button" value="Registrarse ">
+                </div>
+            </form>
         </div>
     </section>
 </body>
