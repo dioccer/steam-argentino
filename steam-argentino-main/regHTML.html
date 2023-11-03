@@ -7,32 +7,28 @@
     <title>Tucson Games - Register</title>
 </head>
 <body>
-    <section>
-        <div class="container">
-            <a href="inicioHTML.html">Volver a Inicio</a>
-            <h1>Rucson Games</h1>
-            <form action="" class="containerForm">
-                <div class="formNickname">
-                    <label for="">Apodo de Jugador</label>
-                    <input type="text" placeholder="Pepitoxd" required="true">
-                </div>
-                <div class="formName">
-                    <label for="">Nombre de Jugador</label>
-                    <input type="text" placeholder="Jugador 1" required="true">
-                </div>
-                <div class="formEmail">
-                    <label for="">Email</label>
-                    <input type="email" placeholder="example@text.com" required="true">
-                </div>
-                <div class="formPassword">
-                    <label for="">Contraseña</label>
-                    <input type="password" placeholder="**********" required="true">
-                </div>
-                <div class="formButton">
-                    <input type="button" value="Registrarse ">
-                </div>
-            </form>
-        </div>
-    </section>
+    <div class="container">
+        <a href="inicioHTML.html">Volver a Inicio</a>
+        <h1>Rucson Games</h1>
+        <form action="regUsuaHTML.html" class="containerForm">
+            <label for="">Apodo de Jugador</label>
+            <div class="divInput">
+                <input type="text" placeholder="Pepitoxd" required="true" maxlength="16" minlength="4" autofocus>
+            </div>
+            <label for="">Nombre de Jugador</label>
+            <div class="divInput">
+                <input type="text" placeholder="Jugador 1" required="true">
+            </div>
+            <label for="">Email</label>
+            <div class="divInput">
+                <input type="email" placeholder="example@text.com" required="true">
+            </div>
+            <label for="">Contraseña</label>
+            <div class="divInput">
+                <input type="password" placeholder="**********" required="true" maxlength="12" minlength="6">
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
 </body>
 </html>

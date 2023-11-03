@@ -61,12 +61,10 @@ a{
 .container{
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
-
+    height: 100vh;
 }
 
 form label{
@@ -82,12 +80,45 @@ form input{
 .containerForm{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: hsl(264, 74%, 23%);
+    background: hsl(264, 74%, 23%);
     padding: 5vh;
-    border-radius: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 0px 10px hsl(264, 74%, 23%), -5px 0px 10px hsl(264, 74%, 23%), 0px 5px 10px hsl(264, 74%, 23%), 0px -5px 10px hsl(264, 74%, 23%);
 }
 
-.formName{
+.divInput{
+    width: 100%;
+    margin: 1vh 0 2.5vh;
+}
 
+.containerForm input{
+    padding: 1.5vh;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 0px 2px #fff, -2px 0px 2px #fff, 0px 2px 2px #fff, 0px -2px 2px #fff;
+    transition: all 0.3s;
+}
+
+.containerForm input:focus{
+    outline: none;
+    box-shadow: 4px 0px 2px #ccc, -4px 0px 2px #ccc, 0px 4px 2px #ccc, 0px -4px 2px #ccc;
+}
+
+.containerForm button{
+    padding: 1.5vh;
+    font-size: 2.2vh;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.1s;
+}
+
+.containerForm button:active{
+    color: #fff;
+    outline-color: black;
+    background-color: hsl(264, 73%, 50%);
+    box-shadow: 2px 0px 2px #fff, -2px 0px 2px #fff, 0px 2px 2px #fff, 0px -2px 2px #fff;
 }

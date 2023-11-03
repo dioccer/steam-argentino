@@ -2,7 +2,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: aliceblue;
 }
 
 :root{
@@ -69,6 +68,7 @@ body{
     height: 25vh;
     font-size: 10vh;
     margin: 10vh 0 2vh;
+    color: #fff;
     text-shadow: 5px 5px 2px #ccc;
     animation-name: tittleAnimation;
     animation-duration: 1s;
@@ -88,6 +88,7 @@ body{
     }
     75%{
         text-shadow: 2px 2px 5px #ccc;
+        transform: scale(1.2);
     }
     100%{
         text-shadow: 1px 1px 5px #ccc;
@@ -112,16 +113,74 @@ body{
     align-items: stretch;
     justify-content: center;
     height: calc(100vh - 37vh);
+    color: #fff;
 }
 /* Lado Izquierdo */
 .description{
     display: flex;
     align-items: center;
+    position: relative;
     width: calc(50% - (5vh * 2));
     padding: 4vh;
     font-size: 3.5vh;
     text-align: center;
+    animation-name: asideAnimation;
+    animation-duration: 1s;
+}
 
+@keyframes asideAnimation{
+    from{
+        right: 100vh;
+        opacity: 0;
+    }
+    to{
+        right: 0;
+    }
+}
+
+.colorP:nth-child(1){
+    color: #72288a;
+    animation-name: colorPAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.colorP:nth-child(2){
+    color: #00ADEE;
+    animation-name: colorPAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.colorP:nth-child(3){
+    color: #ccc;
+    animation-name: colorPAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.colorP:nth-child(4){
+    color: #107c10;
+    animation-name: colorPAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.colorP:nth-child(5){
+    color: #665cbe;
+    animation-name: colorPAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorPAnimation{
+    from{
+        filter: brightness(1);
+    }
+    to{
+        filter: brightness(2);
+    }
 }
 /* Lado Derecho */
 
@@ -140,9 +199,11 @@ body{
 }
 
 .button{
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background : var(--bgbutton);
     border-radius: 25px;
     box-shadow: -10px 0px 10px var(--bgbuttoncolor1), 0px 10px 10px var(--bgbuttoncolor1), 10px 0px 10px var(--bgbuttoncolor2), 0px -10px 10px var(--bgbuttoncolor2);
@@ -151,7 +212,7 @@ body{
     font-size: 4vh;
     transition: all 0.3s ease;
     animation-name: buttonAnimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes buttonAnimation{
@@ -162,8 +223,7 @@ body{
     to{
         margin-left: 0;
         width: 100%;
-    }
-    
+    }   
 }
 
 .button:hover{
