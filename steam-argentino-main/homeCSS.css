@@ -1,10 +1,17 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/*
 :root{
+    
     --bgcolor0: linear-gradient(55deg, hsla(254, 54%, 11%, 0.98),
     20%, hsla(264, 54%, 11%, 0.98),
     40%, hsla(270, 57%, 11%, 0.98),
@@ -15,10 +22,10 @@
     --bgAnimation2: hsla(270, 57%, 11%, 0.98);
     --bgAnimation3: hsl(275, 55%, 11%, 0.98);
     --bgAnimation4: hsl(285, 55%, 11%, 0.98);
-}
+}*/
 
 body{
-    background: var(--bgcolor0);
+    /*background: var(--bgimagen);*/
     overflow-x: hidden;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -47,6 +54,65 @@ body{
         background: var(--bgAnimation4);
     }
 }
+
+/*PARALLAX*/
+main{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+section{
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+section h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+.no-parallax{
+    background-color: rgb(12, 134, 190);
+    z-index: 999;
+}
+
+.parallax h1{
+    width: 60%;
+    font-size: 2rem;
+}
+
+.parallax::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateZ(-1) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.bg::after{
+    background: linear-gradient(rgba(0,0,0,.5)rgba(0,0,0,.5));
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-wolf-animals-images-wallpaper-for-pc-384x480-image_2916211.jpg");
+    background-size: cover;
+    perspective: 5px;
+    transform: translateZ(-100px);
+}
+
+
+
+/*---------------*/
+
 
 .containerMayor{
     display: flex;
