@@ -4,15 +4,47 @@
     padding: 0;
 }
 
+:root{
+    --bgcolor0: linear-gradient(55deg, hsla(254, 54%, 11%, 0.98),
+    20%, hsla(264, 54%, 11%, 0.98),
+    40%, hsla(270, 57%, 11%, 0.98),
+    60%, hsl(275, 55%, 11%, 0.98),
+    80%, hsl(285, 55%, 11%, 0.98));
+    --bgAnimation0: hsla(254, 54%, 11%, 0.98);
+    --bgAnimation1: hsla(264, 54%, 11%, 0.98);
+    --bgAnimation2: hsla(270, 57%, 11%, 0.98);
+    --bgAnimation3: hsl(275, 55%, 11%, 0.98);
+    --bgAnimation4: hsl(285, 55%, 11%, 0.98);
+}
+
 body{
-    background: linear-gradient(55deg, hsla(255, 55%, 11%, 0.98),
-     20%, hsl(265, 55%, 11%, 0.98),
-     40%, hsla(270, 57%, 11%, 0.98),
-     60%, hsl(275, 55%, 11%, 0.98),
-     80%, hsl(285, 55%, 11%, 0.98));
+    background: var(--bgcolor0);
      background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    animation-name: bgAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+
+@keyframes bgAnimation{
+    0%{
+        background: var(--bgAnimation0);
+    }
+    25%{
+        background: var(--bgAnimation1);
+    }
+    50%{
+        background: var(--bgAnimation2);
+    }
+    75%{
+        background: var(--bgAnimation3);
+    }
+    100%{
+        background: var(--bgAnimation4);
+    }
 }
 
 /*---TITULO---*/
@@ -20,11 +52,16 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 170px;
+    top: 200px;
     font-size: 30px;
     color: rgb(230, 230, 230);
     cursor: default;
 }
+
+.elegir h1{
+    text-align: center;
+}
+
 .elegir h1 b{
     color: rgb(188, 88, 197);
 }
@@ -32,6 +69,8 @@ body{
 /*-----CONTENEDOR GENERAL-----*/
 .user-contenedor{
     display: flex;
+    width: 100%;
+    min-width: 500px;
     flex-grow: 1;
     flex-wrap: wrap;
     flex-basis: 200px;
@@ -57,15 +96,26 @@ body{
     height: 150px;
     width: 150px;
     cursor: pointer;
+    border-radius: 50%;
+    transition: 0.15s;
+}
+
+.user-img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 .user-img:hover{
-    box-shadow: 5px 0px 10px white, -5px 0px 10px white, 0px 5px 10px white, 0px -5px 10px white;
+    box-shadow: 7px 0px 10px white, -7px 0px 10px white, 0px 7px 10px white, 0px -7px 10px white;
+    scale: 0.85;
     transition: 0.45s;
 }
 
 .user-img:hover + .user-num{
     color: rgb(230, 230, 230);
+    scale: 1.1;
+    transition: 0.25s;
 }
 
 .user-num{
@@ -78,17 +128,15 @@ body{
     cursor: pointer;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    border-radius: 50%;
+    transition: 0.25s;
 }
 
 .user-num:hover{
     color: rgb(230,230,230);
+    scale: 1.1;
 }
 
-.user-num:hover + .user-img{
-    background: rgb(120, 120, 120);
-    outline: 2px solid rgb(200,200,200);
-}
-
-.user-agregar{
-    background: 0;
+.user-num:hover + .user-img img{
+    scale: 0.9;
 }

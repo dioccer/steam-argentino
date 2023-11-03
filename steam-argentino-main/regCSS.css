@@ -4,13 +4,90 @@
     padding: 0;
 }
 
+:root{
+    --bgcolor0: linear-gradient(55deg, hsla(254, 54%, 11%, 0.98),
+    20%, hsla(264, 54%, 11%, 0.98),
+    40%, hsla(270, 57%, 11%, 0.98),
+    60%, hsl(275, 55%, 11%, 0.98),
+    80%, hsl(285, 55%, 11%, 0.98));
+    --bgAnimation0: hsla(254, 54%, 11%, 0.98);
+    --bgAnimation1: hsla(264, 54%, 11%, 0.98);
+    --bgAnimation2: hsla(270, 57%, 11%, 0.98);
+    --bgAnimation3: hsl(275, 55%, 11%, 0.98);
+    --bgAnimation4: hsl(285, 55%, 11%, 0.98);
+}
+
+h1, label{
+    color: white;
+}
+
 body{
-    background: linear-gradient(55deg, hsla(255, 55%, 11%, 0.98),
-     20%, hsl(265, 55%, 11%, 0.98),
-     40%, hsla(270, 57%, 11%, 0.98),
-     60%, hsl(275, 55%, 11%, 0.98),
-     80%, hsl(285, 55%, 11%, 0.98));
-     background-size: 100% 100%;
+    background: var(--bg-color0);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
+    animation-name: bgAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+
+@keyframes bgAnimation{
+    0%{
+        background: var(--bgAnimation0);
+    }
+    25%{
+        background: var(--bgAnimation1);
+    }
+    50%{
+        background: var(--bgAnimation2);
+    }
+    75%{
+        background: var(--bgAnimation3);
+    }
+    100%{
+        background: var(--bgAnimation4);
+    }
+}
+
+a{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+form label{
+    margin: 1vh;
+    font-size: 3vh;
+}
+
+form input{
+    margin: 1vh;
+    font-size: 2vh;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(264, 74%, 23%);
+    padding: 5vh;
+    border-radius: 15px;
+}
+
+.formName{
+
 }

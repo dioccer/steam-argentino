@@ -4,21 +4,53 @@
     padding: 0;
 }
 
+:root{
+    --bgcolor0: linear-gradient(55deg, hsla(254, 54%, 11%, 0.98),
+    20%, hsla(264, 54%, 11%, 0.98),
+    40%, hsla(270, 57%, 11%, 0.98),
+    60%, hsl(275, 55%, 11%, 0.98),
+    80%, hsl(285, 55%, 11%, 0.98));
+    --bgAnimation0: hsla(254, 54%, 11%, 0.98);
+    --bgAnimation1: hsla(264, 54%, 11%, 0.98);
+    --bgAnimation2: hsla(270, 57%, 11%, 0.98);
+    --bgAnimation3: hsl(275, 55%, 11%, 0.98);
+    --bgAnimation4: hsl(285, 55%, 11%, 0.98);
+}
+
 body{
-    background: linear-gradient(55deg, hsla(255, 55%, 11%, 0.98),
-     20%, hsl(265, 55%, 11%, 0.98),
-     40%, hsla(270, 57%, 11%, 0.98),
-     60%, hsl(275, 55%, 11%, 0.98),
-     80%, hsl(285, 55%, 11%, 0.98));
-     background-size: 100% 100%;
+    background: var(--bgcolor0);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    animation-name: bgAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+
+@keyframes bgAnimation{
+    0%{
+        background: var(--bgAnimation0);
+    }
+    25%{
+        background: var(--bgAnimation1);
+    }
+    50%{
+        background: var(--bgAnimation2);
+    }
+    75%{
+        background: var(--bgAnimation3);
+    }
+    100%{
+        background: var(--bgAnimation4);
+    }
 }
 
 h1{
     color: #fff;
     margin-bottom: 5vh;
-    font-size: 5vh;
+    font-size: 10vh;
 }
 
 section{
@@ -33,9 +65,8 @@ section{
 }
 /*----CONTENEDOR DE TODO EL FORMULARIO----*/
 .contenedor{
-    position: relative;
-    width: 400px;
-    height: 450px;
+    width: 100%;
+    height: 100vh;
     top: 45px;
     display: flex;
     flex-direction: column;
@@ -47,7 +78,7 @@ section{
 
 .contenedor h2{
     position: relative;
-    font-size: 1.1rem;
+    font-size: 3.5vh;
     color: aliceblue;
     text-align: center;
 }
@@ -169,7 +200,7 @@ input:focus ~ label, input:valid ~ label{
 /*-----BOTON PARA ACCEDER-----*/
 
 button{
-    margin-left: 75px;
+    margin-left: 64px;
     width: 50%;
     height: 45px;
     background-color: #fff;
