@@ -7,6 +7,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*SCROLL*/
@@ -55,7 +56,8 @@ section h1{
 }
 
 .no-parallax{
-    background-color: rgb(12, 134, 190);
+    
+    background-color: blue;
     z-index: 999;
 }
 
@@ -90,6 +92,89 @@ section h1{
     perspective: 1px;
     transform: translateZ(-1px);
 }
+
+.destacados{
+    position: absolute;
+    color: #000;
+    margin-bottom: 85vh;
+    margin-right: 115vh;
+}
+
+/*--CARRUSEL--*/
+
+.container{
+    position: relative;    
+}
+
+.container .sect1{
+    width: 90vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.container .sect2{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+
+.container #slider-img-1{
+    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/09/gta-v-gta-online-3135014.jpg?tf=3840x");
+    background-position: center;
+}
+
+.container #slider-img-2{
+    background-image: url("https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2021/05/28/46B44E35-0E3B-4B4A-B7AA-6BAECF2A9A94/98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=high&format=webply");
+    background-position: center;
+}
+
+.container #slider-img-3{
+    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/07/ea-sports-fc-24-todo-sabemos-sucesor-fifa-24-3084248.jpg");
+    background-position: center;
+}
+
+.container #slider-img-4{
+    background-image: url("https://www.talkesport.com/wp-content/uploads/CSGO-14.jpg");
+    background-position: center;
+}
+
+.container .button-holder .button{
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem; 
+}
+
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+
+
+/*----------------*/
+
 /*
 #fondo{
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/88/297/120/anime-sky-landscape-purple-hd-wallpaper-preview.jpg);
@@ -101,111 +186,79 @@ section h1{
 /*---------------*/
 
 /*---NAV---*/
-.nav{  
+.nav{
     display: flex;
     width: 100%;
-    height: 7vh;
-    border-bottom: 2px black solid ;
-    background-color: blue;
+    height: 10vh;
 }
 
-.menu-icon i{
-    color: #fff;
-    font-size: x-large;
-    margin-right: 40px;
-    margin-top: 20px;
+.navImage{
+    display: flex;
+    width: 8vh;
+    height: 8vh;
+    margin: 1vh;
 }
 
-.settings i{
-    font-size: x-large;
-    margin-right: 40px;
-    margin-top: 20px;
-    text-align: center;
+.navImage img{
+    border-radius: 25px;
 }
 
-.icon{
-    width: 5vh;
-    height: 5vh;
-    border: 1px black solid;
-    border-radius: 100px;
-    position: relative;
-    top: 10px;
-    left: 8px;
-}
-.icon img{
-    width: 5vh;
-    height: 5vh;
-    border-radius: 100px;
-}
-
-.name{
+.navNombre{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vh;
     position: relative;
-    left: -5vh;
-    opacity: 0;
-    transition: 0.5s ease-out;
+    right: 10vh;
+    transition: 1s;
     pointer-events: none;
-    z-index: -2;
-    color: #ccc;
+    opacity: 0;
+    z-index: -1;
 }
 
-.icon:hover ~ .name{
-    transform: translateX(8vh);
+.navImage:hover + .navNombre{
+    transform: translateX(10vh);
     opacity: 1;
-    transition: 0.5s ease-out;
 }
 
-.searchMain{
+.navSearch{
     display: flex;
     justify-content: center;
-    margin: 0vh 20vh 0vh 0vh;
+    width: 100%;
+    height: 8vh;
+    margin: 1vh;
+}
+
+.navSearch input{
+    padding: 1vh;
+    font-size: 3vh;
+    border-radius: 25px;
+    width: 8vh;
+    transition: 450ms ease-in-out;
+    color: white;
+}
+
+.navSearch img{
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+    width: 8vh;
+    scale: .5;
+
+}
+
+.navSearch input:focus{
+    padding: 1vh 8vh 1vh 2vh;
     width: 100%;
 }
 
-.search{
+.navSearch input:focus ~
+.navTool{
     display: flex;
-    justify-content: center;
-    margin-right: 5vh;
-    border: none;
+    width: 100%;
+    height: 8vh;
+    margin: 1vh;
+    
 }
-
-.search-icon{
-    color: black;
-    position: relative;
-    right: 50px;
-    top: 20px;
-}
-
-.lupa-search{
-    display: flex;
-    width: 4vh;
-    height: 4vh;
-    margin: 1.3vh 0vh 0vh 0vh;
-    border-radius: 15px;
-    border: 10vh;
-}
-
-.search input{
-    width: 55vh;
-    height: 1vh;
-    font-size: 3vh;
-    padding: 2vh;
-    margin-right: 2vh;
-    margin: 1vh 2vh 0vh 0vh;
-    border-radius: 100px;
-    background: white;
-    opacity: 50%;
-    border: none;
-}
-
-.search input:focus , .search input:active{
-    border: none;
-    outline: none;
-}
-
 /* TOOLBAR */
 
 

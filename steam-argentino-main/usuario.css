@@ -1,0 +1,87 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(55deg, hsla(255, 55%, 11%, 0.98),
+     20%, hsl(265, 55%, 11%, 0.98),
+     40%, hsla(270, 57%, 11%, 0.98),
+     60%, hsl(275, 55%, 11%, 0.98),
+     80%, hsl(285, 55%, 11%, 0.98));
+}
+
+/*---TITULO---*/
+.elegir{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 170px;
+    font-size: 30px;
+    color: rgb(230, 230, 230);
+    cursor: default;
+}
+.elegir h1 b{
+    color: rgb(188, 88, 197);
+}
+
+/*-----CONTENEDOR GENERAL-----*/
+.user-contenedor{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    position: relative;
+    justify-content: center;
+    top: 37vh;
+}
+
+/*-----CONTENEDOR POR USUARIO-----*/
+.user{
+    width: 150px;
+    margin: 0 25px 0 25px;
+}
+
+/*-----IMAGENES PERFIL-----*/
+.user-img{
+    display: flex;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.user-img:hover{
+    box-shadow: 5px 0px 10px white, -5px 0px 10px white, 0px 5px 10px white, 0px -5px 10px white;
+    transition: 0.45s;
+}
+
+.user-img:hover + .user-num{
+    color: rgb(230, 230, 230);
+}
+
+.user-num{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(146, 134, 134);
+    cursor: pointer;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.user-num:hover{
+    color: rgb(230,230,230);
+}
+
+.user-num:hover + .user-img{
+    background: rgb(120, 120, 120);
+    outline: 2px solid rgb(200,200,200);
+}
+
+.user-agregar{
+    background: 0;
+}
