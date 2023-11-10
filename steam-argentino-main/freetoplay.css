@@ -177,7 +177,7 @@ body{
 .titulo_TP{
     position: absolute;
     top: 300px;
-    font-size: 30px;
+    font-size: 25px;
     color: #fcf;
 }
 
@@ -259,7 +259,7 @@ body{
     object-fit: fill;
 }
 
-/*----------------------*/
+/*----------IMAGENES DE LOS TITULOS POPULARES------------*/
 
 .titulo_pop{
     width: 100%;
@@ -432,4 +432,97 @@ body{
 }
 .contenedor:hover .cat_j10{
     opacity: 1;
+}
+
+/*------TITULO TODOS LOS ARTICULOS---------*/
+
+.container_titulo_TA{
+    position: absolute;
+    left: 190px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #fcf;
+}
+
+/*-----CONTENEDOR PARA TODOS LOS ARTICULOS------*/
+
+#contenedor_TA{
+    display: flex;
+    justify-content: center;
+}
+
+.grid_todos_articulos{
+    display: grid;
+    grid-template-columns: 950px;
+    grid-template-rows: repeat(15, 150px);
+    outline: 2px solid #5d5;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    grid-gap: 5px;
+    padding: 20px;
+    background: #c5c;
+}
+
+.contenedor_general_TA{
+    border: 5px solid #d9a;
+    background: #919;
+    box-shadow: 7px 0px 10px #b231b7, -7px 0px 10px #b231b7, 0px 7px 10px #b231b7, 0px -7px 10px #b231b7;/*#3451b7*/
+}
+
+.contenedor_general_TA img{
+    object-fit: fill;
+    width: 200px;
+    height: 100%;
+}
+
+.contenedor_general_TA p{
+    position: relative;
+    top: -140px;
+    left: 220px;
+    font-size: 25px;
+    color: #fef;
+}
+
+.contenedor_general_TA a button{
+    position: relative;
+    top: -130px;
+    left: 220px;
+    height: 20px;
+    background: #b1b;
+    border: #b1b;
+    color: #fff;
+    padding: 1px 10px 18px 10px;
+}
+
+.contenedor_general_TA a button:hover{
+    color: #afd;
+}
+
+.contenedor_general_TA a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10x;
+}
+
+
+.guardar_juego a button{
+    top: -110px;
+    left: 810px;
+    background: #808;
+    box-shadow: 2px 0px 5px #b231b7, -2px 0px 5px #b231b7, 0px 2px 5px #b231b7, 0px -2px 5px #b231b7;
+    color: #fff;
+    border: 1px solid #d9a;
+    font-size: 15px;
+    padding: 5px 10px 25px 10px;
+    cursor: pointer;
+}
+
+.guardar_juego a button:hover{
+    color: #fff;
+    background: #e5e;
+}
+
+.fecha p{
+    top: -110px;
+    font-size: 15px;
 }
