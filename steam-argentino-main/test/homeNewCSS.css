@@ -1,397 +1,505 @@
-*,
+*, 
 *::before,
-*::after{
-    box-sizing: border-box;
-}
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after
+{
+  box-sizing: border-box;
 }
 
-/*SCROLL*/
-::-webkit-scrollbar{
-    width: 15px;
+*
+{
+  margin: 0;
+  padding: 0;
 }
 
-::-webkit-scrollbar-track{
-    background: #604279;
+
+.header-container{
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: transparent;
+    transition: .2s;
+    margin-bottom: -73px;
 }
 
-::-webkit-scrollbar-thumb{
-    background: rgb(55, 11, 85);
+.header-logo{
+  scale: 2;
+  position: relative;
+  left: 15px;
+}
+
+.header-menu{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 20;
+    transition: .2s;
+    z-index: 1;
+    padding: 2vh;
+}
+
+.header-menu-fondo{
+    background-color: #ccc;
+    border-radius: 35px;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .2s;
+}
+
+.header-menu-fondo:hover{
+  opacity: 1;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    transition: .2s;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-pc{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transition: .2s;
+    z-index: 2;
+}
+.nav-playstation{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transition: .2s;
+    z-index: 2;
+}
+.nav-xbox{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transition: .2s;
+    z-index: 2;
+}
+.nav-nintendo{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transition: .2s;
+    z-index: 2;
+}
+.button-search{
+    background-color: #5333ed;
+    border: none;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: .2s;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+}
+.button-search:hover{
+    background-color: #4e6deb;
+}
+.button-search:active{
+    background-color: #3e28b0;
+}
+.button-search:hover:focus{
+  box-shadow: 5px 0px 10px #4e6deb, -5px 0px 10px #4e6deb, 0px 5px 10px #4e6deb, 0px -5px 10px #4e6deb;
+}
+.button-search:active:focus{
+  box-shadow: 5px 0px 10px #3e28b0, -5px 0px 10px #3e28b0, 0px 5px 10px #3e28b0, 0px -5px 10px #3e28b0;
+}
+.button-search:focus{
+  outline: none;
+  box-shadow: 5px 0px 10px #5333ed, -5px 0px 10px #5333ed, 0px 5px 10px #5333ed, 0px -5px 10px #5333ed;
+}
+.button-search::placeholder{
+    color: #ccc;
+}
+
+.imagen-search{
+    position: absolute;
+    z-index: 3;
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+    scale: 0.5;
+    pointer-events: none;
+}
+
+/*---PARALLAX---*/
+main 
+{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+main .parallax{
+  height: 700px;
+}
+
+section 
+{
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+section h1
+{
+  text-align: center;
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+
+.parallax h1 
+{
+  height: 700px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.parallax::after 
+{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after 
+{
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./assets/photo.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) 
+{
+  section h1 
+  {
+    font-size: 8rem;
+  }
+  
+  .parallax h1 
+  {
+    font-size: 4rem;
+  }
+}
+
+
+
+.itemCarrusel{
+    height: 100%;
+    position:relative;
+}
+.tarjetaCarrusel{
+    height: 900px;
+    width: 100%;
+}
+.flechaCarrusel{
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    transition: 3s ease-in-out;
+}
+#conteItemsCarrusel{
+    height:100vh;
+    width: 100%;
+    overflow:hidden;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color:white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+}
+
+
+
+.textp1 p{
+    position: absolute;
+    bottom: 400px;
+    left: 115px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.btnvermas a{
+    position: absolute;
+    top: 550px;
+    left: 140px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+    font-size: 30px;
+    background-color: rgba(102, 17, 187,1);
+    color: #eee;
+    text-decoration: none;
+    padding: 10px;
     border-radius: 8px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: rgb(43, 0, 71);
-}
-
-
-/*-----*/
-
-/*PARALLAX*/
-main{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-}
-
-section{
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
-section h1{
-    text-align: center;
-    font-size: 4rem;
-    font-family: sans-serif;
-}
-
-.no-parallax{
-    
-    background-color: blue;
-    z-index: 999;
-}
-
-.containerCatalogo{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    padding: 10vh;
-}
-
-.parallax h1{
-    width: 60%;
-    font-size: 2rem;
-    color: #000;
-}
-
-.parallax::after{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: translateZ(-1) scale(1.1);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.bg{
-    background: url("https://fondosmil.com/fondo/5259.jpg");
-    transition: transform 0.3s ease;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.bg::after{
-    background: linear-gradient(rgba(0,0,0,.5)rgba(0,0,0,.5));
-    background-image: url();
-    background-size: cover;
-    perspective: 1px;
-    transform: translateZ(-1px);
-}
-
-.destacados{
-    position: absolute;
-    color: #000;
-    margin-bottom: 85vh;
-    margin-right: 115vh;
-}
-
-
-:root{
-    --bgcolor0: linear-gradient(55deg, hsla(254, 54%, 11%, 0.98),
-    20%, hsla(264, 54%, 11%, 0.98),
-    40%, hsla(270, 57%, 11%, 0.98),
-    60%, hsl(275, 55%, 11%, 0.98),
-    80%, hsl(285, 55%, 11%, 0.98));
-    --bgAnimation0: hsla(254, 54%, 11%, 0.98);
-    --bgAnimation1: hsla(264, 54%, 11%, 0.98);
-    --bgAnimation2: hsla(270, 57%, 11%, 0.98);
-    --bgAnimation3: hsl(275, 55%, 11%, 0.98);
-    --bgAnimation4: hsl(285, 55%, 11%, 0.98);
-    --bgbutton: linear-gradient(15deg, #72288a, #171f70);
-    --bgbuttonhover: linear-gradient(15deg, #171f70, #72288a);
-    --bgbuttoncolor1: #72288a;
-    --bgbuttoncolor2: #171f70;
-}
-
-#fondo{
-    background: var(--bgcolor0);
-}
-/*------------------*/
-
-/*--PARALLLAX 2--------*/
-#slider {
-    font-family: sans-serif;
-    margin: auto;
-    background-color: #604279;
-    max-width: 800px;
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-#slider>ul,
-li {    
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#slider>ul.slider {
-    position: relative;
-    max-width: 800px;
-    width: 100%;
-    height: 300px;
-}
-
-#slider>ul.slider h1 {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px;
-    left: 50%;
-    top: 100px;
-    transform: translate(-50%, -50%);
-}
-
-#slider>ul.slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background: #fff;
-}
-
-#slider>ul.slider li img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-#slider>ul.slider li:first-child {
-    opacity: 1;
-    /*Mostramos el primer <li>*/
-}
-
-#slider>ul.slider li:target {
-    opacity: 1;
-    /*Mostramos el <li> del enlace que pulsemos*/
-}
-
-#slider>.menu {
-    text-align: center;
-    margin: 20px;
-}
-
-#slider>.menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-#slider>.menu li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: grey;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
+.btnvermas a:hover{
+  background-color: #664ceb;
 }
 
 
 
-/*---------------------*/
-
-
-
-/*--CARRUSEL--*/
-
-.container{
-    position: relative;    
+.txt1 p{
+  position: absolute;
+  bottom: 335px;
+  left: 300px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
 }
 
-.container .sect1{
-    width: 105vh;
-    height: 70vh;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    margin: 5rem auto;
-    overflow: hidden;
+/*--------------*/
+
+
+/*---PARALLAX 2---*/
+.no-parallax 
+{
+  background-color: #040012;
+  border-color: #4e6deb;
+  z-index: 999;   
+  height: 150vh;
 }
 
-.container .sect2{
-    display: grid;
-    grid-template-columns: repeat(4,100%);
-    height: 100%;
-    width: 100%;
-    animation: slider 40s ease-in-out infinite alternate;
-}
-
-.container #slider-img-1{
-    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/09/gta-v-gta-online-3135014.jpg?tf=3840x");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container #slider-img-2{
-    background-image: url("https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2021/05/28/46B44E35-0E3B-4B4A-B7AA-6BAECF2A9A94/98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=high&format=webply");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container #slider-img-3{
-    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/07/ea-sports-fc-24-todo-sabemos-sucesor-fifa-24-3084248.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container #slider-img-4{
-    background-image: url("https://www.talkesport.com/wp-content/uploads/CSGO-14.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container .button-holder .button{
-    background-color: #fff;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    display: inline-block;
-    margin: .3rem; 
-}
-
-.container .button-holder{
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
-}
-
-@keyframes slider{
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-300%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
-    90%{transform: translateX(0%);}
-    100%{transform: translateX(0%);}
-}
-
-.container .sect1:hover{
-    box-shadow: 10px 10px 20px #ffffff;
+.op-suscripcion{
+  font-size: 80px;
+  position: absolute;
+  margin-bottom: 1050px;
 }
 
 
-/*----------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  gap: 16px;
+  position: absolute;
+  margin-bottom: 300px;
+}
 
-/*
-#fondo{
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/88/297/120/anime-sky-landscape-purple-hd-wallpaper-preview.jpg);
-    background-size: cover;
-    filter: saturate(2);
-}*/
+.content {
+  padding: 24px;
+  flex-grow: 1;
+  height: 260px;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 18px 36px -18px 
+  rgba(0,0,0,0.1),
+  0px 30px 45px -30px rgba(50,50,93,0.25);
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 100%;
+  flex-basis: 330px;
+  padding: 4px;
+  min-height: 500px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10%;
+}
+
+.card:hover{
+  background-color: rgb(44, 16, 72);
+}
+
+.content > h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  line-height: 1.384615385;
+}
+
+.content > p {
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.content a:hover {
+  color: #0a2540;
+}
+
+.card-background {
+  height: 200px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .card-background {
+  height: 160px;
+}
+
+.card-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.card:hover .action-bottom-bar a {
+  opacity: 1;
+}
+
+.action-bottom-bar {
+  display: flex;
+  font-size: 18px;
+  height: 42px;
+  width: 100%;
+}
+
+.action-bottom-bar a {
+  display: flex;
+  gap: 6px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 800;
+  opacity: 0;
+  padding: 0 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-bottom-bar a:hover {
+  color: var(--secondary);
+}
+
+.action-bottom-bar a:hover svg {
+  color: var(--secondary);
+}
+
+.action-bottom-bar a svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow {
+  display: none;
+}
+
+.action-bottom-bar a:hover .arrow {
+  display: block;
+}
+
+.action-bottom-bar a:hover .chevron {
+  display: none;
+}
+
+.ico-player i{
+  transform: scaleX(1,5), scaleY(1,5);
+  color: white;
+  position: relative;
+  top: 200px;
+}
 
 /*---------------*/
 
-/*---NAV---*/
-.nav{
-    display: flex;
-    width: 100%;
-    height: 10vh;
+/*---PARALLAX 3---*/
+.no-parallax1 
+{
+  background-color: rgb(39, 7, 74);
+  border-color: #4e6deb;
+  z-index: -1;   
+  height: 150vh;
 }
 
-.navImage{
-    display: flex;
-    width: 8vh;
-    height: 8vh;
-    margin: 1vh;
+.img-tendencias img{
+  position: relative;
+  z-index: 3;
+  bottom: 250px;
+  height: 900px;
+  width: 100%;
+  filter: blur(6px);
 }
 
-.navImage img{
-    border-radius: 25px;
+.img-tendencias h1{
+  position: relative;
+  bottom: 750px;
+  right: 250px;
+  z-index: 4;
 }
 
-.navNombre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 10vh;
-    transition: 1s;
-    pointer-events: none;
-    opacity: 0;
-    z-index: -1;
+.img-tendencias a{
+  position: relative;
+  bottom: 550px;
+  left: 450px;
+  z-index: 5;
+  font-size: 40px;
+  font-style: none;
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(48, 9, 67);
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.navImage:hover + .navNombre{
-    transform: translateX(10vh);
-    opacity: 1;
+.img-tendencias a:hover{
+  font-style: italic;
+  background-color: rgb(103, 25, 142);
 }
-
-.navSearch{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 8vh;
-    margin: 1vh;
-}
-
-.navSearch input{
-    padding: 1vh;
-    font-size: 3vh;
-    border-radius: 25px;
-    width: 8vh;
-    transition: 450ms ease-in-out;
-    color: white;
-}
-
-.navSearch img{
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    width: 8vh;
-    scale: .5;
-
-}
-
-.navSearch input:focus{
-    padding: 1vh 8vh 1vh 2vh;
-    width: 100%;
-}
-
-.navSearch input:focus ~
-.navTool{
-    display: flex;
-    width: 100%;
-    height: 8vh;
-    margin: 1vh;
-    
-}
-/* TOOLBAR */
+/*---------------*/
 
 
-
-/*-----------*/

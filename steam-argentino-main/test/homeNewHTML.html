@@ -1,106 +1,185 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="es">
 <head>
     <link rel="stylesheet" href="homeNewCSS.css">
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="shortcut icon" href="../imagenes/IconoWeb.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5286d86a45.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <nav class="nav">
-            <div class="navImage">
-                <img src="../imagenes/instagram-logo.png" alt="">
-            </div>
-            <div class="navNombre">
-                <h1>IDjugador</h1>
-            </div>
-            <div class="navSearch">
-                <input type="search" name="search" id="search">
-                <img src="../imagenes/buscar.png" alt="">
-            </div>
-            <div class="navTool">
-                
-                
-            </div>
-        </nav>
-
-
-        <article>
-            
-        <article>
-
-
-        <aside>
-
-        </aside>   
-
-        
-        <!--PARALLAX-->
-        <section class="no-parallax" id="fondo">
-
-            <h1 class="destacados">DESTACADOS</h1>
-
-          <div class="container">
-            <div class="sect1">
-                <div class="sect2">
-                    <div id="slider-img-1"></div>
-                    <div id="slider-img-2"></div>
-                    <div id="slider-img-3"></div>
-                    <div id="slider-img-4"></div>
+    <nav class="header-container">
+        <a href="homeNewHTML.html">
+            <img src="../imagenes/LogoWeb.png" alt="LogoWeb" class="header-logo">
+        </a>
+        <div class="header-menu">
+           <div class="header-menu-fondo"></div>
+           <div class="links">
+                <div class="nav-pc">
+                    Pc
                 </div>
+                <div class="nav-playstation">
+                    PlayStation
+                </div> 
+                <div class="nav-xbox">
+                    Xbox
+                </div>
+                <div class="nav-nintendo">
+                    Nintendo
+                </div> 
+                <form action="get">
+                <div>
+                    <input type="button" class="button-search" name="button-search" onclick="cambiarBoton()"/>
+                    <img src="../imagenes/buscar.png" alt="" class="imagen-search" name="imagen-search">
+                </div>
+               </form>
             </div>
-            <div class="button-holder">
-                <a href="#slider-img-1" class="button"></a>
-                <a href="#slider-img-2" class="button"></a>
-                <a href="#slider-img-3" class="button"></a>
-                <a href="#slider-img-4" class="button"></a>
-            </div>
-          </div>
-        </section>
-
-        <section class="parallax bg" id="fondo2">
-            <div id="slider">
-
-                <ul class="slider">
-                    <li id="slide1">
-                        <img src="https://statics.vrutal.com/m/428c/428c4db276c6bcb334fc2bf7f38350e8_thumb_fb.jpg" />
-                    </li>
-                    <li id="slide2">
-                        <img src="https://www.startvideojuegos.com/wp-content/uploads/2015/03/Entrevista-Irvin-Zonca-Collage-Milestone-Start-Videojuegos.jpg" />
-                    </li>
-                    <li id="slide3">
-                        <h1>Ejemplo con otros elementos</h1>
-                    </li>
-                </ul>
-        
-                <ul class="menu">
-                    <li>
-                        <a href="#slide1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide3">3</a>
-                    </li>
-                </ul>
-        
-            </div>
-        
-            <div style="display: none;">
-                <a href="https://kikopalomares.com/" target="_blank">Powered by Kiko Palomares</a>
-            </div>
-        </section>
-
-        <section class="no-parallax">
-            <h1>llevaloooooooooooooooo</h1>
-        </section>
-        <!------------->
-
-        <footer>
+        </div>
+    </nav>
+    <main>
+        <section class="parallax bg" >
             
-        </footer>
+            <div id="conteItemsCarrusel">
+                <!---ITEM 1-->
+                <div class="itemCarrusel" id="itemCarrusel-1">
+                    
+                        <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                            <a href="inicio.html">
+                                <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/9n/9N1NHD38UQD21696523887840.jpg">
+                            </a>
+                        </div>
+                              
+                                
+                                <div class="textp1">
+                                    <p><b>Call of Duty: Modern Warfare III</b></p>
+                                </div>
+
+                                <div class="txt1">
+                                    <p>
+                                        <b>$USD 64,76</b> 
+                                    </p>
+                                </div>
+
+                                <div class="btnvermas">
+                                    <a href="inicio.html">Comprar</a>
+                                </div>
+                            
+                </div>
+
+                
+                <!--item 2-->
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                    <img src="https://media.vandal.net/m/8-2023/202381117501453_1.jpg" alt="">
+                    </div>
+                            <div class="flechaCarrusel">
+                                <a href="#itemCarrusel-1">
+                                    <i class="fa-solid fa-arrow-left-long"></i>
+                            </a>
+                        <a href="#itemCarrusel-3">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                            </div>
+                            <!--item 3-->
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                    <img src="https://miamidiario.com/wp-content/uploads/portada-1.jpeg" alt="">
+                    </div>
+                            <div class="flechaCarrusel">
+                                <a href="#itemCarrusel-2">
+                                    <i class="fa-solid fa-arrow-left-long"></i>
+                            </a>
+                        <a href="#itemCarrusel-1">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                            </div>
+            
+            
+                </div>
+                
+        </section>
+        
+        <section class="no-parallax a2">
+            <h1 class="op-suscripcion">Opciones de suscripción</h1>
+
+            <div class="container">
+                <article class="card">
+                    <div class='card-background'>
+                        <img src="https://img.freepik.com/fotos-premium/signo-dolar-oro_186380-1562.jpg" alt="background" />
+                    </div>
+                    <div class='content'>
+                        <h1>1 MES</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, temporibus?
+                        </p>
+                    </div>
+                    <div class="action-bottom-bar">
+                        <a href="#">
+                            Metodos de pago
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class='card-background'>
+                        <img src="https://img.freepik.com/fotos-premium/signo-dolar-oro_186380-1562.jpg" alt="background" />
+                    </div>
+                    <div class='content'>
+                        <h1>6 MESES</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>     
+                    <div class="action-bottom-bar">
+                        <a href="#">
+                            Metodos de pago
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class='card-background'>
+                        <img src="https://img.freepik.com/fotos-premium/signo-dolar-oro_186380-1562.jpg" alt="background" />
+                    </div>
+                    <div class='content'>
+                        <h1>12 MESES</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, optio?
+                        </p>
+                        
+                    </div>
+                    <div class="action-bottom-bar">
+                        <a href="#">
+                            Metodos de pago
+                        </a>
+                    </div>
+            </div>
+
+            <div class="ico-player">
+                <i class="fa-solid fa-download" style="color: #ffffff;"></i>
+            </div>
+                
+        </section>
+        <section class="no-parallax1 a3">
+                 
+            <div class="img-tendencias">
+                <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2023/10/ea-sports-fc-24-review.jpg?fit=1920%2C1080&quality=50&strip=all&ssl=1">
+
+
+                <h1>TENDENCIAS</h1>
+                <a href="#"><b>Ver todas las tendencias</b></a>
+            </div>
+                    
+                               
+        </section>
+
+        <div>
+            <a href="../freetoplay.html">free to play</a>
+            <a href="../testeovideo.html">testeo</a>
+        </div>
     </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
