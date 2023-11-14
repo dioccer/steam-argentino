@@ -315,7 +315,7 @@ img{
 
 .op-suscripcion{
   position: absolute;
-  margin-bottom: 800px;
+  margin-bottom: 1000px;
 }
 
 .op-suscripcion h1{
@@ -351,13 +351,13 @@ img{
   0px 30px 45px -30px rgba(50,50,93,0.25);
   background-color: rgb(0, 0, 0);
   cursor: pointer;
-  width: 100%;
+  width: 500px;
+  height: 600px;
   padding: 4px;
   min-height: 500px;
   transition: all 0.2s ease-in-out;
-  border-radius: 10%;
+  border-radius: 10px;
 
-  
 }
 
 .card:hover{
@@ -388,6 +388,8 @@ img{
 
 .card-background {
   height: 200px;
+  width: 480px;
+ 
   transition: all 0.2s ease-in-out;
 }
 
@@ -399,7 +401,7 @@ img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .card:hover .action-bottom-bar a {
@@ -823,3 +825,5 @@ div .Contacto{
   margin-bottom: 450px;
   margin-left: 1000px;
 }
+
+
