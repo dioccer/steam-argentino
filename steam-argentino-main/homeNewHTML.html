@@ -1,0 +1,324 @@
+<!DOCTYPE html5>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="homeNewCSS.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/IconoWeb.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5286d86a45.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav class="header-container">
+        <a href="homeNewHTML.html">
+            <img src="../imagenes/LogoWeb.png" alt="LogoWeb" class="header-logo">
+        </a>
+        <div class="header-menu">
+           <div class="header-menu-fondo"></div>
+           <div class="links">
+                <div class="nav-links">
+                    Pc
+                </div>
+                <div class="nav-links">
+                    PlayStation
+                </div> 
+                <div class="nav-links">
+                    Xbox
+                </div>
+                <div class="nav-links">
+                    Nintendo
+                </div> 
+                <form action="get">
+                <div>
+                    <input type="button" class="button-search" name="button-search" onclick="cambiarBoton()"/>
+                    <img src="../imagenes/buscar.png" alt="" class="imagen-search" name="imagen-search">
+                    <img src="../imagenes/cancelar.png" alt="" class="cancelar-search" name="cancelar-search" onclick="cambiarBotonActivado()">
+                </div>
+               </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="parallax bg" >
+            
+            <div id="conteItemsCarrusel">
+                <!---ITEM 1-->
+                <div class="itemCarrusel" id="itemCarrusel-1">
+                    
+                        <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                            <a href="#">
+                                <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/9n/9N1NHD38UQD21696523887840.jpg">
+                            </a>
+                        </div>
+                              
+                                
+                                <div class="textp1">
+                                    <p><b>Call of Duty: Modern Warfare III</b></p>
+                                </div>
+
+                                <div class="txt1">
+                                    <p>
+                                        <b>$USD 64,76</b> 
+                                    </p>
+                                </div>
+
+                                <div class="btnvermas">
+                                    <a href="inicio.html">Comprar</a>
+                                </div>
+                            
+                </div>
+
+                
+                <!--item 2-->
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                    <img src="https://media.vandal.net/m/8-2023/202381117501453_1.jpg" alt="">
+                    </div>
+                            <div class="flechaCarrusel">
+                                <a href="#itemCarrusel-1">
+                                    <i class="fa-solid fa-arrow-left-long"></i>
+                            </a>
+                        <a href="#itemCarrusel-3">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                            </div>
+                            <!--item 3-->
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                    <img src="https://miamidiario.com/wp-content/uploads/portada-1.jpeg" alt="">
+                    </div>
+                            <div class="flechaCarrusel">
+                                <a href="#itemCarrusel-2">
+                                    <i class="fa-solid fa-arrow-left-long"></i>
+                            </a>
+                        <a href="#itemCarrusel-1">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                            </div>
+            
+            
+                </div>
+                
+        </section>
+        
+        <section class="no-parallax a2">
+            <div class="op-suscripcion">
+                <h1>Opciones de suscripción</h1>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <div class='card-background'>
+                        <img src="https://img.freepik.com/fotos-premium/signo-dolar-oro_186380-1562.jpg" alt="background" />
+                    </div>
+                    <div class='content'>
+                        <h1>1 MES / $USD 4.99</h1>
+                        
+                        <p>Disfruta de esta suscripción, obteniendo <br>descuentos en la mayoria de los juegos de la tienda</p>
+                    </div>
+                    <div class="action-bottom-bar">
+                        <a href="#">
+                            Metodos de pago
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class='card-background'>
+                        <img src="https://img.freepik.com/fotos-premium/signo-dolar-oro_186380-1562.jpg" alt="background" />
+                    </div>
+                    <div class='content'>
+                        <h1>3 MESES</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>     
+                    <div class="action-bottom-bar">
+                        <a href="#">
+                            Metodos de pago
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class='card-background'>
+                        <img src="https://img.freepik.com/fotos-premium/signo-dolar-oro_186380-1562.jpg" alt="background" />
+                    </div>
+                    <div class='content'>
+                        <h1>12 MESES</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, optio?
+                        </p>
+                        
+                    </div>
+                    <div class="action-bottom-bar">
+                        <a href="#">
+                            Metodos de pago
+                        </a>
+                    </div>
+                </div>
+            </div>
+                
+           
+                
+        </section>
+        <section class="no-parallax1 a3">
+            <div class="divTitulo">
+                <h1>Tendencias</h1>
+            </div>
+            <div class="divjuegostrend">
+                 <p class="juegosTrenText">GTA V<p>
+                <article>
+                    <img src="https://pics.filmaffinity.com/Grand_Theft_Auto_V-957088410-mmed.jpg" class="juegosTrendImg">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Franklin-Clinton-PNG-Free-Download.png" alt="">
+                </article>   
+            </div>
+
+            <div class="divjuegostrend">
+                 <p class="juegosTrenText">Gang Beast</p>
+                <article>
+                    <img src="https://meridiem-games.com/backoffice/public/uploads/games/PuZH9e.jpg" class="juegosTrendImg">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202310/1216/1c6232385de9a836ac9c16ba5d2ddd1f632df409d7e807af.png" alt="">
+                </article>
+            </div>
+
+            <div class ="divjuegostrend">
+                 <p class="juegosTrenText">FC 24</p>
+                 <article>
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202307/0710/7c13365a04b5776c36bc18cf3d8cdca12593cb6c62c518e0.png" class="juegosTrendImg">
+                    <img src="https://cdn.futbin.com/content/fifa23/img/players/p134456813.png?v=23" alt="">
+                 </article>
+            </div>
+            <div class ="divjuegostrend">
+                 <p class="juegosTrenText">RDR 2</p>
+                 <article id="effect">
+                    <img src="https://media.vandal.net/m/42944/red-dead-redemption-2-2019101812583956_1.jpg" class="juegosTrendImg">
+                    <img src="https://pngimg.es/d/red_dead_redemption_PNG13.png" alt="">
+                 </article>
+            </div>
+            <div class ="divjuegostrend">
+                 <p class="juegosTrenText">Lies of P</p>
+                 <article>
+                    <img src="https://gamesave.store/wp-content/uploads/2023/09/lies_of_pi_gamesave_1.jpg" class="juegosTrendImg">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202305/2308/13ca59218885b51512fe9269dfa352ecf7bb92afc6216e3b.png" alt="">
+                 </article>
+            </div>
+            
+            <div class ="divjuegostrend">
+                 <p class="juegosTrenText">Mortal Kombat 1</p>
+                 <article>
+                    <img src="https://cdn1.epicgames.com/offer/fda0f2b4047f46ffb4e94d5595c1468e/EGS_MortalKombat1PremiumEdition_NetherRealmStudios_Editions_S2_1200x1600-131f9927da017ac3604db6ca6098e631" class="juegosTrendImg">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17d210ad-d7df-4953-bd00-756345ddbbd8/dfxdelh-b1b40701-0579-4757-a249-50d8f59b7099.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3ZDIxMGFkLWQ3ZGYtNDk1My1iZDAwLTc1NjM0NWRkYmJkOFwvZGZ4ZGVsaC1iMWI0MDcwMS0wNTc5LTQ3NTctYTI0OS01MGQ4ZjU5YjcwOTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bCWcGy8GOLLtBwOkft78zPzQ1PPLJsWVj9PvxktnY58" alt="">
+                 </article>
+            </div>
+
+            <div class="divjuegostrend">
+                <p class="juegosTrenText">Overwatch 2<p>
+                    <article>
+                        <img src="https://i.3djuegos.com/juegos/16959/overwatch_2/fotos/ficha/overwatch_2-5752233.jpg" class="juegosTrendImg">   
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8357f847-6d84-4dca-a7da-2e9507556638/dcrrpwv-83a77f67-740e-4285-a872-7b0cd7693a15.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgzNTdmODQ3LTZkODQtNGRjYS1hN2RhLTJlOTUwNzU1NjYzOFwvZGNycnB3di04M2E3N2Y2Ny03NDBlLTQyODUtYTg3Mi03YjBjZDc2OTNhMTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Kjil0hes2ilpkiYQ1awI8tRTW41qRtRjx4OJT5j_wOw" alt="">
+                    </article>
+            </div>
+            <div class="divjuegostrend">
+                <p class="juegosTrenText">Robocop<p>
+                    <article>
+                        <img src="https://i.3djuegos.com/juegos/18067/robocop_rogue_city/fotos/ficha/robocop_rogue_city-5793990.jpg" class="juegosTrendImg">   
+                        <img src="https://www.pngplay.com/wp-content/uploads/12/Robocop-PNG-Background-Clip-Art.png" alt="">
+                    </article>
+            </div>
+            <div class="divjuegostrend">
+                <p class="juegosTrenText">Battlefield 2042<p>
+                    <article>
+                        <img src="https://i.3djuegos.com/juegos/17408/battlefield__2020_/fotos/ficha/battlefield__2020_-5537479.webp" class="juegosTrendImg">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f69a0b6-e8ff-43a0-8b23-0094b917323c/descswg-a376ee90-b677-485b-8832-5fb49808c73e.png/v1/fill/w_1280,h_1257/battlefield_2042_render_by_bumbleboss_descswg-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1NyIsInBhdGgiOiJcL2ZcLzdmNjlhMGI2LWU4ZmYtNDNhMC04YjIzLTAwOTRiOTE3MzIzY1wvZGVzY3N3Zy1hMzc2ZWU5MC1iNjc3LTQ4NWItODgzMi01ZmI0OTgwOGM3M2UucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xkeDMapF6bb3K6ZY6iN8rXpahga3R6wsu4BBaR5NF-M" alt="">
+                    </article>
+            </div>
+            <div class="divjuegostrend">
+                <p class="juegosTrenText">RE 4: Remake<p>
+                    <article>
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/0712/Excr73ZmEiSIQT18r070yhX5.png" class="juegosTrendImg">   
+                        <img src="https://i.pinimg.com/originals/ee/ea/fa/eeeafaf02ea3411851248cc801c5d7d8.png" alt="">
+                    </article>
+            </div>          
+        </section>
+
+        <section class="no-parallax2 a3" >
+            <h3>En Rucson.Games podrás encontrar ofertas increibles <br> todos los meses, y también tendrás <br> los mejores beneficios como:</h3>
+            
+            <div class="img-calen">
+                <img src="../imagenes/calendario.png" alt="">
+            </div>
+
+            <p class="text-calen">Pagando la suscripción de 6 meses, obtendrás 1 juego <b>GRATIS</b> <br> por més y comprando la suscripción de 12 meses, <br> obtendrás 3 juegos <b>GRATIS</b> por més</p>
+                
+            <div class="img-points">
+                <img src="../imagenes/Rucson_Coin.png" alt="">
+            </div>
+
+            <p class="txt-points">Consiguiendo logors en tus juegos, <br>podrás sumar <b>RucsonCoins</b>, que te servirán para canjear <br> por descuentos o incluso para comprar juegos con los puntos</p>
+
+
+
+        </section>
+        
+        <footer>
+            <div class="container-footer">
+                <div class="row">
+                      <div class="col" id="company">
+                        <img src="../imagenes/LogoWeb.png" class="logo">
+                          
+                          <div class="social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+    
+    
+                      <div class="col" id="services">
+                         <h3 class="Tyc">Términos y condiciones</h3>
+                      </div>
+    
+                      <div class="col" id="useful-links">
+                         <h3 class="Pyp">Política y privacidad</h3>
+                      </div>
+    
+                      <div class="col" id="contact">
+                          <h3 class="Contacto">Contacto</h3>
+                        
+                          <div class="contact-details" id="containe-contact">
+                             <i class="fa fa-location"></i>
+                             <p>San Miguel de Tucumán <br> Tucumán, Argentina</p>
+                          </div>
+                          <div class="contact-details" id="container-contact">
+                             <i class="fa fa-phone"></i>
+                             <p>3813572338 / 3813395554</p>
+                          
+                        </div>
+
+                      </div>
+                </div>
+    
+                <div class="row">
+                      <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Email here...">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                </div>
+    
+            </div>
+        </footer>
+        
+    </main>
+    
+    
+       
+        
+    
+</body>
+</html>
