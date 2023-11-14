@@ -1,23 +1,29 @@
 function cambiarBoton(){
-    var boton = document.getElementsByName("button-search")[0];
-    var imagen = document.getElementsByName("imagen-search")[0];
-    boton.style.width = "640px";
-    boton.style.fontSize = "25px";
-    boton.style.padding = "2vh";
+    const boton = document.getElementsByName('button-search')[0];
+    const imagen = document.getElementsByName('imagen-search')[0];
+    const cancelar = document.getElementsByName('cancelar-search')[0];
+    boton.style.width = '84vh';
+    boton.style.height = '';
+    boton.style.padding = "3vh";
+    boton.style.fontSize = "3vh";
     boton.style.color = "white";
-    imagen.style.opacity = 0;
-    //boton.style.background = "red"
+    imagen.style.opacity = '0';
+    cancelar.style.opacity = '1';
+    //boton.setAttribute("onclick", "cambiarBotonActivado()");
     boton.setAttribute("type", "search");
-    boton.setAttribute("placeholder", "Minecraft, Call of Duty...");
-    boton.setAttribute("onclick", "cambiarBotonActivado()");
+    boton.setAttribute("placeholder", "Far Cry, Minecraft, Skyrim...");
 }
 
 function cambiarBotonActivado(){
-    var boton = document.getElementsByName("button-search")[0];
-    var imagen = document.getElementsByName("imagen-search")[0];
-    boton.style.width = "50px";
-    imagen.style.opacity = 1;
-    //boton.style.background = "red"
-    boton.setAttribute("type", "button");
-    boton.setAttribute("onclick", "cambiarBoton()");
+    const boton = document.getElementsByName('button-search')[0];
+    const imagen = document.getElementsByName('imagen-search')[0];
+    const cancelar = document.getElementsByName('cancelar-search')[0];
+    boton.style.width = '55px';
+    boton.style.color = 'transparent'
+    imagen.style.opacity = '1';
+    cancelar.style.opacity = '0';
+    //boton.setAttribute("onclick", "cambiarBoton()");
 }
+
+
+
