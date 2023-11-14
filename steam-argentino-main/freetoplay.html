@@ -10,36 +10,41 @@
     <script src="categoria.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav">
-            <div class="icon">
-                <a href="jugadorConfigHTML.html">
-                    <img src="imagenes/perfil.png" alt="perfil">
-                </a>  
-            </div>
-            <div class="name">
-                <h2>Example text</h2>
-            </div>
-            <div class="searchMain">
-                <div class="search">
-                    <input type="search" name="" id="" placeholder="Buscar...">
-                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <nav class="header-container">
+        <a href="homeNewHTML.html">
+            <img src="../imagenes/LogoWeb.png" alt="LogoWeb" class="header-logo">
+        </a>
+        <div class="header-menu">
+           <div class="header-menu-fondo"></div>
+           <div class="links">
+                <div class="nav-links">
+                    Pc
                 </div>
+                <div class="nav-links">
+                    PlayStation
+                </div> 
+                <div class="nav-links">
+                    Xbox
+                </div>
+                <div class="nav-links">
+                    Nintendo
+                </div> 
+                <form action="get">
+                <div>
+                    <input type="button" class="button-search" name="button-search" onclick="cambiarBoton()"/>
+                    <img src="../imagenes/buscar.png" alt="" class="imagen-search" name="imagen-search">
+                    <img src="../imagenes/cancelar.png" alt="" class="cancelar-search" name="cancelar-search" onclick="cambiarBotonActivado()">
+                </div>
+               </form>
             </div>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="settings-icon">
-                <i class="fa-solid fa-gear"></i>
-            </div>
-       </div>        
+        </div>
     </nav>
 
     <main>
-
+        <a href="test/homeNewHTML.html">Home</a>
         <!--
 <div id="conteItemsCarrusel">
-            <!---ITEM 1--
+            <!--ITEM 1--
             <div class="itemCarrusel" id="itemCarrusel-1">
                 <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
             <img src="https://pixelz.cc/wp-content/uploads/2018/07/fortnite-uhd-4k-wallpaper.jpg">
@@ -208,7 +213,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 27 SEP 2023</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -237,6 +242,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -247,7 +255,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 27 OCT 2009</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -255,6 +263,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -265,7 +276,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 23 MAR 2017</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -273,6 +284,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -283,7 +297,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 25 MAR 2013</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -291,6 +305,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -301,7 +318,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 30 ABR 2014</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -309,6 +326,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -319,7 +339,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 2 SEP 2014</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -327,6 +347,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -337,7 +360,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 30 ENE 2015</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -345,6 +368,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -355,7 +381,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 7 JUL 2015</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -363,6 +389,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -373,7 +402,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 17 SEP 2015</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -381,6 +410,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -391,7 +423,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 4 AGO 2020</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -399,6 +431,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -409,7 +444,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 4 FEB 2019</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -417,6 +452,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -435,6 +473,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -445,7 +486,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 9 JUL 2013</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -453,6 +494,9 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
 
                 <div class="contenedor_general_TA">
@@ -463,7 +507,7 @@
                     <a href="#"><button>Aventuras</button></a>
 
                     <div class="fecha">
-                        <p>Fecha de Lanzamiento: 12 MAY 2021</p>
+                        <p>Fecha de Lanzamiento: 5 NOV 2015</p>
                     </div>
                     
                     <div class="guardar_juego">
@@ -471,9 +515,64 @@
                             <button>Guardar Juego</button>
                         </a>
                     </div>
+
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    </video>
                 </div>
             </div>
         </section>     
     </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row">
+                  <div class="col" id="company">
+                    <img src="../imagenes/LogoWeb.png" class="logo">
+                      
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+
+
+                  <div class="col" id="services">
+                     <h3 class="Tyc">Términos y condiciones</h3>
+                  </div>
+
+                  <div class="col" id="useful-links">
+                     <h3 class="Pyp">Política y privacidad</h3>
+                  </div>
+
+                  <div class="col" id="contact">
+                      <h3 class="Contacto">Contacto</h3>
+                    
+                      <div class="contact-details" id="containe-contact">
+                         <i class="fa fa-location"></i>
+                         <p>San Miguel de Tucumán <br> Tucumán, Argentina</p>
+                      </div>
+                      <div class="contact-details" id="container-contact">
+                        <i class="fa fa-phone"></i>
+                        <p>3813572338 / 3813395554</p>
+                        <a href="../freetoplay.html">free to play</a>
+                    </div>
+
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Email here...">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
