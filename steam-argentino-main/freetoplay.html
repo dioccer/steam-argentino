@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free To Play</title>
-    <link rel="shortcut icon" href="../imagenes/IconoWeb.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagenes/IconoWeb.png" type="image/x-icon">
     <link rel="stylesheet" href="freetoplay.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="categoria.js"></script>
+    <script src="test/script.js"></script>
 </head>
 <body>
     <nav class="header-container">
-        <a href="homeNewHTML.html">
-            <img src="../imagenes/LogoWeb.png" alt="LogoWeb" class="header-logo">
-        </a>
+        <div class="container-header-logo">
+            <a href="test/homeNewHTML.html">
+                <img src="imagenes/LogoWeb.png" alt="LogoWeb" class="header-logo">
+            </a>
+        </div>
+        
         <div class="header-menu">
            <div class="header-menu-fondo"></div>
            <div class="links">
@@ -32,8 +35,8 @@
                 <form action="get">
                 <div>
                     <input type="button" class="button-search" name="button-search" onclick="cambiarBoton()"/>
-                    <img src="../imagenes/buscar.png" alt="" class="imagen-search" name="imagen-search">
-                    <img src="../imagenes/cancelar.png" alt="" class="cancelar-search" name="cancelar-search" onclick="cambiarBotonActivado()">
+                    <img src="imagenes/buscar.png" alt="" class="imagen-search" name="imagen-search">
+                    <img src="imagenes/cancelar.png" alt="" class="cancelar-search" name="cancelar-search" onclick="cambiarBotonActivado()">
                 </div>
                </form>
             </div>
@@ -41,7 +44,6 @@
     </nav>
 
     <main>
-        <a href="test/homeNewHTML.html">Home</a>
         <!--
 <div id="conteItemsCarrusel">
             <!--ITEM 1--
@@ -107,34 +109,34 @@
             <div class="grid_titulos_populares">
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png"
+                        <img class="titulo_pop" src="imagenes-freetoplay/assassinscreed.jpg"
                         onmouseover="" >
                         
-                        <video src="videos/videoprueba.mp4" class="video_1" loop muted autoplay controls>
+                        <video src="videos/videoprueba.mp4" class="video_1" loop muted autoplay >
                         </video>
                     </a>
                 </div>
         
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwiii/MWIII-REVEAL-FULL-TOUT.jpg">
-                        <video src="videos/videoprueba.mp4" class="video_2" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/MWIII.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_2" loop muted autoplay >
                         </video>
                     </a>
                 </div>
     
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://i.blogs.es/acdb29/ea-sports-fc-24-como-jugar-antes-el-nuevo-fifa-24-te-decimos-a-que-hora-es-el-lanzamiento-del-juego-de-futbol-de-ea-sports/1366_2000.jpeg">
-                        <video src="videos/videoprueba.mp4" class="video_3" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/FC24.jpeg">
+                        <video src="videos/videoprueba.mp4" class="video_3" loop muted autoplay >
                         </video>
                     </a>
                 </div>
     
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1698860631">
-                        <video src="videos/videoprueba.mp4" class="video_4" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/CS2.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_4" loop muted autoplay >
                         </video>
                     </a>
                 </div>
@@ -143,56 +145,56 @@
 
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg?t=1678991267">
-                        <video src="videos/videoprueba.mp4" class="video_5" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/sekiro.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_5" loop muted autoplay >
                         </video>
                     </a>
                 </div>
     
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://www.trecebits.com/wp-content/uploads/2020/08/Fall-Guys.jpg">
-                        <video src="videos/videoprueba.mp4" class="video_6" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/Fall-Guys.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_6" loop muted autoplay >
                         </video>
                     </a>
                 </div>
 
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://cdn.akamai.steamstatic.com/steam/apps/883710/capsule_616x353.jpg?t=1692001351">
-                        <video src="videos/videoprueba.mp4" class="video_7" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/RE2.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_7" loop muted autoplay >
                         </video>
                     </a>
                 </div>
     
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://media.vandal.net/m/53183/fortnite-battle-royale-2017103123312_1.jpg">
-                        <video src="videos/videoprueba.mp4" class="video_8" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/fortnite.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_8" loop muted autoplay >
                         </video>
                     </a>
                 </div>
 
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/1280/V.jpg">
-                        <video src="videos/videoprueba.mp4" class="video_9" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/GTA5.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_9" loop muted autoplay >
                         </video>
                     </a>
                 </div>
     
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://osomorado.com.ar/wp-content/uploads/2022/07/wfwffwa.png">
-                        <video src="videos/videoprueba.mp4" class="video_10" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/Minecraft.png">
+                        <video src="videos/videoprueba.mp4" class="video_10" loop muted autoplay >
                         </video>
                     </a>
                 </div>
     
                 <div class="contenedor">
                     <a href="#"> 
-                        <img class="titulo_pop" src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png">
-                        <video src="videos/videoprueba.mp4" class="video_11" loop muted autoplay controls>
+                        <img class="titulo_pop" src="imagenes-freetoplay/RedDeadRedemption.jpg">
+                        <video src="videos/videoprueba.mp4" class="video_11" loop muted autoplay >
                         </video>
                     </a>
                 </div>
@@ -206,7 +208,7 @@
 
             <div class="grid_todos_articulos">
                 <div class="contenedor_general_TA">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1698860631" alt="">
+                    <img src="imagenes-freetoplay/CS2.jpg" alt="">
                     <p>Counter-Strike 2</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -222,12 +224,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://media.vandal.net/m/53183/fortnite-battle-royale-2017103123312_1.jpg" alt="">
+                    <img src="imagenes-freetoplay/fortnite.jpg" alt="">
                     <p>Fortnite</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -243,12 +245,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://piks.eldesmarque.com/thumbs/680/bin/esports/2019/09/LoL2.jpg" alt="">
+                    <img src="imagenes-freetoplay/LOL.jpg" alt="">
                     <p>League of Legends</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -264,12 +266,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://play-lh.googleusercontent.com/uqq6a-fHayQxsNQkxB9ZZXag8N7Du5mOEKcScr9yltHqx3RKgCdr9VJHKGO2vY_GUe0" alt="">
+                    <img src="imagenes-freetoplay/PUBG.png" alt="">
                     <p>PUBG: Battlegrounds</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -285,12 +287,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://n9e5v4d8.ssl.hwcdn.net/images/longlanding/warframe-metacard.png" alt="">
+                    <img src="imagenes-freetoplay/warframe.png" alt="">
                     <p>Warframe</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -306,12 +308,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/291550/capsule_616x353.jpg?t=1699636914" alt="">
+                    <img src="imagenes-freetoplay/brawlhalla.jpg" alt="">
                     <p>Brawlhalla</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -327,12 +329,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://www.cronista.com/files/image/483/483437/634ffcab69a16.png" alt="">
+                    <img src="imagenes-freetoplay/sims.png" alt="">
                     <p>The Sims 4</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -348,12 +350,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://image.api.playstation.com/cdn/UP0082/CUSA01442_00/QHRbFpnFoWaPuNOuKrulhmshvbbMAv0v.png" alt="">
+                    <img src="imagenes-freetoplay/life-is-strange.jpg" alt="">
                     <p>Life is Strange</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -369,12 +371,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rocket_League_coverart.jpg/640px-Rocket_League_coverart.jpg" alt="">
+                    <img src="imagenes-freetoplay/Rocket-league.jpg" alt="">
                     <p>Rocket League</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -390,12 +392,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://wows-web-static.wgcdn.co/wowsp/69320338/images/wows_social_1.jpg" alt="">
+                    <img src="imagenes-freetoplay/world-warship.jpg" alt="">
                     <p>World of Warships</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -411,12 +413,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://cdn1.epicgames.com/offer/50118b7f954e450f8823df1614b24e80/EGS_FallGuys_Mediatonic_S2_1200x1600-6ea0c038d654d7b6dc06bf86a1522f21" alt="">
+                    <img src="imagenes-freetoplay/Fall-Guys.jpg" alt="">
                     <p>Fall Guys</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -432,12 +434,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg" alt="">
+                    <img src="imagenes-freetoplay/apex.jpg" alt="">
                     <p>Apex Legends</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -453,12 +455,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht" alt="">
+                    <img src="imagenes-freetoplay/roblox.png" alt="">
                     <p>Roblox</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -474,12 +476,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://elcomercio.pe/resizer/QrtCqC24s2duI7MeCg4TOAT-ueo=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7JNEJLD6VFHZJO45MVT2JVUBTI.jpg" alt="">
+                    <img src="imagenes-freetoplay/dota2.jpg" alt="">
                     <p>Dota 2</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -495,12 +497,12 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
 
                 <div class="contenedor_general_TA">
-                    <img src="https://image.api.playstation.com/vulcan/img/cfn/11307CjjUZ9rA_whmJUghJsG9Hl1-rmnOUTk3-nccj01ZpYMCHrJ8k8kzBrVyp-p-iCPej73TEJAs88ZBeiZ1uirtj0fsa16.png" alt="">
+                    <img src="imagenes-freetoplay/COD-BOIII.jpg" alt="">
                     <p>Call of Duty: Black Ops III</p>
                     <a href="#"><button>Acción</button> </a>
                     <a href="#"><button>Multijugador</button></a>
@@ -516,7 +518,7 @@
                         </a>
                     </div>
 
-                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay controls>
+                    <video src="videos/videoprueba.mp4" class="video_TA" loop muted autoplay >
                     </video>
                 </div>
             </div>
@@ -526,41 +528,42 @@
     <footer>
         <div class="container-footer">
             <div class="row">
-                  <div class="col" id="company">
-                    <img src="../imagenes/LogoWeb.png" class="logo">
+                <div class="col" id="company">
+                    
+                    <img src="imagenes/LogoWeb.png" class="logo">
                       
-                      <div class="social">
+                    <div class="social">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                      </div>
-                  </div>
+                    </div>
+                </div>
 
 
-                  <div class="col" id="services">
-                     <h3 class="Tyc">Términos y condiciones</h3>
-                  </div>
+                <div class="col" id="services">
+                    <h3 class="Tyc">Términos y condiciones</h3>
+                </div>
 
-                  <div class="col" id="useful-links">
-                     <h3 class="Pyp">Política y privacidad</h3>
-                  </div>
+                <div class="col" id="useful-links">
+                    <h3 class="Pyp">Política y privacidad</h3>
+                </div>
 
-                  <div class="col" id="contact">
-                      <h3 class="Contacto">Contacto</h3>
+                <div class="col" id="contact">
+
+                    <h3 class="Contacto">Contacto</h3>
                     
-                      <div class="contact-details" id="containe-contact">
-                         <i class="fa fa-location"></i>
-                         <p>San Miguel de Tucumán <br> Tucumán, Argentina</p>
-                      </div>
-                      <div class="contact-details" id="container-contact">
-                        <i class="fa fa-phone"></i>
-                        <p>3813572338 / 3813395554</p>
-                        <a href="../freetoplay.html">free to play</a>
+                    <div class="contact-details" id="containe-contact">
+                        <i class="fa fa-location"></i>
+                        <p>San Miguel de Tucumán <br> Tucumán, Argentina</p>
                     </div>
 
-                  </div>
+                    <div class="contact-details" id="container-contact">
+                        <i class="fa fa-phone"></i>
+                        <p>3813572338 / 3813395554</p>
+                    </div>
+                </div>
             </div>
 
             <div class="row">

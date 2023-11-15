@@ -2,6 +2,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 :root{
     --bgcolor0: linear-gradient(55deg, hsla(254, 54%, 11%, 0.98),
@@ -45,7 +46,7 @@ body{
 }
 /*NAV DE LA PAGINA*/
 .header-container{
-    width: 100%;
+    width: 1270px;
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -59,11 +60,17 @@ body{
     margin-bottom: -73px;
 }
 
+.header-container .container-header-logo{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+}
+
 .header-logo{
-  scale: 0.3;
-  position: relative;
-  left: 0px;
-  top: 10px;
+  width: 100%;
+  height: 100%; 
 }
 
 .header-menu{
@@ -182,7 +189,7 @@ body{
 /*------GRILLA TITULOS POPULARES-------*/
 .titulo_TP{
     position: absolute;
-    top: 20vh;
+    top: 35vh;
     font-size: 25px;
     color: #fcf;
 }
@@ -196,7 +203,7 @@ body{
     grid-template-columns: repeat(6, minmax(100px,150px));
     grid-auto-flow: dense;
     grid-gap: 15px;
-    margin-top: 120px;
+    margin-top: 40vh;
     justify-content: center;
     grid-auto-flow: dense;
     
@@ -276,6 +283,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 .contenedor a video:hover{
     opacity: 1;
@@ -289,7 +297,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
-    
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -306,6 +314,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -322,6 +331,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -337,6 +347,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -353,6 +364,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -369,6 +381,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -385,6 +398,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -401,6 +415,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -417,6 +432,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -433,6 +449,7 @@ video:hover{
     height: 100%;
     opacity: 0;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .contenedor a .video:hover{
@@ -473,6 +490,7 @@ video:hover{
     background: #919;
     box-shadow: 2px 0px 5px #b231b7, -2px 0px 5px #b231b7, 0px 2px 5px #b231b7, 0px -2px 5px #b231b7;/*#3451b7*/
     transition: .5s;
+    
 }
 
 .contenedor_general_TA:hover{
@@ -489,8 +507,10 @@ video:hover{
     position: relative;
     top: -140px;
     left: 320px;
+    width: 300px;
     font-size: 25px;
     color: #fef;
+
 }
 
 .contenedor_general_TA a button{
@@ -543,6 +563,7 @@ video:hover{
     width: 300px;
     height: 100%;
     opacity: 0;
+    object-fit: fill;
 }
 
 .contenedor_general_TA:hover .video_TA{
@@ -554,12 +575,12 @@ video:hover{
 footer{
     background-color: rgb(19, 17, 17);
     position: relative;
-    width: 100%;
-    height: 10%;
-    min-height: 350px;
+    width: 1317px;
+    height: 250px;
     padding: 3rem 1rem;
     overflow-y: hidden;
   }
+  
   .container-footer {
    max-width: 1140px;
    margin: 0 auto;
@@ -585,6 +606,9 @@ footer{
   .col .logo{
    width: 200px;
    margin-bottom:15px;
+   margin-left: 50px;
+
+   
   }
   
   
@@ -594,22 +618,26 @@ footer{
     right: 10px;
     position: relative;
     cursor: pointer;
+
+    
   }
   
   div .Pyp{
     color:rgb(70, 7, 95);
     margin-top: 20px;
-    right: 260px;
+    right: 323px;
     position: relative;
     cursor: pointer;
+    
   }
   
   div .Contacto{
     color:rgb(70, 7, 95);
     top: 90px;
-    right: 510px;
+    right: 633px;
     position: relative;
     cursor: pointer;
+    
   }
   
   
@@ -627,6 +655,14 @@ footer{
   .col h3:hover::after{
    width:30px
   }
+
+  .col .social{
+    position: relative;
+    top: -55px;
+    left: 80px;
+    
+  }
+
   .col .social a i{
    color:rgb(70, 7, 95);
    margin-top:2rem;
